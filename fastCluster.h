@@ -1,16 +1,16 @@
 /*
-¿ìËÙ¾ÛÀàËã·¨
-ÊäÈë£ºNÕÅÈËÁ³ÖÐ£¬ÈÎÒâÁ½ÕÅÖ®¼äµÄ¾àÀëd(i,j)
-Êä³ö£ºm¸öÈËÎïµÄ´ØÐÄ£¨ÖÐÐÄÈËÁ³£©£¬ÒÔ¼°Ã¿Ò»ÕÅÈËÁ³ËùÊôµÄÀà±ð£¨´ØÐÄ£©
+å¿«é€Ÿèšç±»ç®—æ³•
+è¾“å…¥ï¼šNå¼ äººè„¸ä¸­ï¼Œä»»æ„ä¸¤å¼ ä¹‹é—´çš„è·ç¦»d(i,j)
+è¾“å‡ºï¼šmä¸ªäººç‰©çš„ç°‡å¿ƒï¼ˆä¸­å¿ƒäººè„¸ï¼‰ï¼Œä»¥åŠæ¯ä¸€å¼ äººè„¸æ‰€å±žçš„ç±»åˆ«ï¼ˆç°‡å¿ƒï¼‰
 
-Author£ºzhao
-Date£º2016Äê1ÔÂ4ÈÕ 20:34:56
+Authorï¼šzhao
+Dateï¼š2016å¹´1æœˆ4æ—¥ 20:34:56
 */
 #include <iostream>
 #include <vector>
 #include <array>
 #include <opencv/cxcore.hpp>
-#include "RECOG.h"
+//#include "RECOG.h"
 //#include <armadillo>
 
 struct node
