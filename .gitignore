@@ -32,15 +32,4 @@
 *.zip
 
 #Dir
-mini-caffe
-renwuku
-build
-allimgs
-faceFolder
-classFolder
-test
-testimg
-massPics
-lfw*
-Models
-m*
+fastclust
