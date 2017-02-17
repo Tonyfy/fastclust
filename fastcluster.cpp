@@ -175,7 +175,7 @@ int Cluster::assign()
 		data[centerIDofclsI].isCenter = true;
 	}
 
-	ofstream result("../result.txt", ios::out);
+	ofstream result("../../test/result.txt", ios::out);
 	if(result.is_open())
 	{
 		for(int i=0;i<data.size();i++)

@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[])
 {
-	string dataset_filepath = "../aggregation.txt";
+	string dataset_filepath = "../../test/aggregation.txt";
 	Cluster cler(dataset_filepath);
 
 	cler.fclust();
