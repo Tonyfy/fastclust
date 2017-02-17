@@ -8,5 +8,5 @@ test on "Aggregation" dataSet, you could also test on [other dataset](https://cs
 the result is :
 
 ![agg][agg]
-[agg]:result.jpg
+[agg]:test/result.jpg
 
