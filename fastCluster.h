@@ -29,24 +29,50 @@ struct pt
 	bool isCenter;
 };
 
+struct node
+{
+	int id;
+	double rho;
+	double delta;
+};
+
+bool comp(node x, node y);
+
+
 class Cluster{
 
 public:
 	//load the dataset to clust.
 	Cluster(string dataset_filepath);
-	
 	int init();
+	//use the 2-D points to get distance matrix
 	int fclust();
+	int getdist();
+	int getdc();
+	int getrho();
+	int getdelta();
+	int assign();
 
 private:
 	string dataset_file;
 	int dataSize;                      //dataset's size 
+	vector<pt> data;
 	double dc;                         //the dc found
 	vector<vector<double>> t_dist;     //
 	double t_neighbor_rate;            //2%
-	std::vector<double> t_rho;
-	std::vector<double> t_delta;
+	double maxdist;
 
+	vector<double> t_rho;
+	vector<node> t_orderrho;
+	vector<double> t_delta;
+
+	vector<int> t_neighbor;
+	double t_maxrho;
+	double t_minrho;
+
+	int t_clusterNum;
+	vector<int> cl;
+	vector<int> icenter_of_class;
 };
 
 #endif //FASTCLUSTER_H__
