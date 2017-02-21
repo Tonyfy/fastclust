@@ -1,6 +1,7 @@
 %show_result
 clc;
-cla;clear;
+clf;
+clear;
 result = load('result.txt');
 x = result(:,1);
 y = result(:,2);
@@ -21,7 +22,7 @@ for i=1:N1
     scatter(dataix,dataiy,colorarr(i));
     hold on;
 end
-title('the source label with data')
+title('data with the source real label')
 
 subplot(1,2,2);
 for i=1:N2
@@ -30,6 +31,6 @@ for i=1:N2
     scatter(dataix,dataiy,colorarr(i));
     hold on;
 end
-title('the result by clustering')
-
+title('data labeled by clustering algorithm')
+saveas(gcf,'result.jpg');  
 
